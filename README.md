@@ -30,10 +30,12 @@ Github: https://github.com/OAID/Tengine
         ```
     * edit `makefile.config`            
         * comment `CONFIG_ARCH_ARM64` option to invalid arm64 arch.       
-        * uncomment `CONFIG_ARCH_BLAS=y` option to invalid Openblas arch.        
+        * uncomment `CONFIG_ARCH_BLAS=y` option to valid Openblas arch.        
 
 4. Build          
+    ```bash
     make -j4
+    ```
 
 5. Get the binary library      
     Replace `Tengine/install/lib/libtengine.so` with the new one.
